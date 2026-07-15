@@ -56,22 +56,32 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p>Dash Cam Viewer &middot; last updated <time datetime="2026-07-05">July 5, 2026</time></p>
+  <p>Dash Cam Viewer &middot; last updated <time datetime="2026-07-15">July 15, 2026</time></p>
 </header>
 
 <section class="card">
   <h2>1. Summary</h2>
   <p>Dash Cam Viewer (&ldquo;the app&rdquo;) is a companion app that connects to a compatible Wi-Fi dashcam (Novatek-based car DVR) to show its live view, browse recordings, and download clips to your phone. It is published by <strong>Cool App Helpdesk</strong>.</p>
   <ul>
-    <li>The developer <strong>collects no personal data</strong> of any kind. There are no user accounts, no analytics, and no developer-operated servers.</li>
-    <li>All communication happens <strong>directly between your phone and your camera</strong> over the camera&rsquo;s local Wi-Fi network. Nothing is sent to the developer or any third party.</li>
-    <li>The app displays <strong>no advertisements</strong> and contains <strong>no third-party tracking SDKs</strong>.</li>
+    <li>There are <strong>no user accounts</strong>, no analytics, and no advertising or third-party tracking SDKs.</li>
+    <li>Your camera activity stays local: live view, recordings, and downloads happen <strong>directly between your phone and your camera</strong> over its Wi-Fi network and are never sent to the developer or any third party.</li>
+    <li>The only information that ever leaves your device is what you <strong>voluntarily submit through the in-app feedback form</strong>, and only if you choose to use it &mdash; see section&nbsp;2.</li>
   </ul>
 </section>
 
 <section class="card">
   <h2>2. Data we collect</h2>
-  <p><strong>None.</strong> Dash Cam Viewer does not collect personal data, telemetry, identifiers, device information, IP addresses, advertising IDs, or usage analytics. There are no user accounts and no developer-operated backend. The app has no feedback form or crash-reporting service that transmits data to the developer.</p>
+  <p>Dash Cam Viewer does not automatically collect personal data, telemetry, advertising IDs, or usage analytics, and there are no user accounts. The one exception is the optional <strong>in-app feedback form</strong>.</p>
+  <p>If &mdash; and only if &mdash; you open <em>Send Feedback</em> and submit it, the app sends the following to the developer&rsquo;s feedback service so we can read and respond:</p>
+  <table>
+    <thead><tr><th>Data</th><th>Provided</th><th>Purpose</th></tr></thead>
+    <tbody>
+      <tr><td>Your message and its subject / type</td><td>Required to submit</td><td>To understand and respond to your feedback</td></tr>
+      <tr><td>A contact detail (email or phone)</td><td><strong>Optional</strong> &mdash; only if you type one</td><td>So we can reply to you</td></tr>
+      <tr><td>Basic technical context: app version, device model, Android version</td><td>Included with a submission</td><td>To reproduce and fix the issue you report</td></tr>
+    </tbody>
+  </table>
+  <p>This information is used <strong>solely to handle your feedback</strong>. It is never sold, shared for advertising, or used to build a profile, and it is transmitted over an encrypted (HTTPS) connection. If you never use the feedback form, none of this is sent.</p>
 </section>
 
 <section class="card">
@@ -93,10 +103,8 @@
   <table>
     <thead><tr><th>Permission</th><th>Reason</th><th>When asked</th></tr></thead>
     <tbody>
-      <tr><td><code>INTERNET</code></td><td>Communicate with the dashcam over Wi-Fi (control commands, live stream, file download).</td><td>Auto-granted (normal permission)</td></tr>
+      <tr><td><code>INTERNET</code></td><td>Communicate with the dashcam over Wi-Fi (control commands, live stream, file download), and send your message if you use the feedback form.</td><td>Auto-granted (normal permission)</td></tr>
       <tr><td><code>ACCESS_NETWORK_STATE</code></td><td>Detect the active Wi-Fi connection so the app can reach the camera.</td><td>Auto-granted (normal permission)</td></tr>
-      <tr><td><code>WAKE_LOCK</code></td><td>Keep the screen/CPU awake during live view and long downloads.</td><td>Auto-granted (normal permission)</td></tr>
-      <tr><td><code>READ_EXTERNAL_STORAGE</code> / <code>WRITE_EXTERNAL_STORAGE</code></td><td>Save and read downloaded clips on older Android versions only (Android&nbsp;12 and below).</td><td>First time you download/export</td></tr>
     </tbody>
   </table>
   <p>The app requests <strong>no location, camera, microphone, contacts, or phone permissions</strong>. You connect to the dashcam&rsquo;s Wi-Fi through the normal Android Wi-Fi settings.</p>
@@ -110,7 +118,7 @@
     <li><strong>Live view</strong> — an MJPEG or RTSP video stream served by the camera on the local network.</li>
     <li><strong>Recordings</strong> — the recording list, thumbnails, and file downloads are fetched directly from the camera.</li>
   </ul>
-  <p>These connections use the camera&rsquo;s own HTTP protocol on your local network and never leave it. The app contacts <strong>no internet servers of its own</strong> and contains <strong>no advertising, analytics, crash-reporting, social, or attribution SDKs</strong>. Bundled libraries (Media3 ExoPlayer, OkHttp, Coil, Room, DataStore) operate strictly within the scope described here.</p>
+  <p>These camera connections use the camera&rsquo;s own HTTP protocol on your local network and never leave it. The <strong>only</strong> connection the app makes to the internet is to the developer&rsquo;s feedback service, over encrypted HTTPS, and <strong>only</strong> when you submit the optional feedback form (see section&nbsp;2). The app contains <strong>no advertising, analytics, crash-reporting, social, or attribution SDKs</strong>. Bundled libraries (Media3 ExoPlayer, OkHttp, Coil, Room, DataStore) operate strictly within the scope described here.</p>
 </section>
 
 <section class="card">
@@ -121,13 +129,13 @@
 
 <section class="card">
   <h2>7. Data retention and deletion</h2>
-  <p>Because the developer collects nothing, there is nothing for us to retain or delete on our end.</p>
+  <p>Feedback you submit is retained only as long as needed to handle your request; email us at the address in section&nbsp;10 to have a message you sent removed. Apart from feedback, the developer stores nothing about you on our end.</p>
   <p>To remove locally stored data (saved cameras, preferences, cached thumbnails), clear the app&rsquo;s storage in <em>Android Settings &rarr; Apps &rarr; Dash Cam Viewer &rarr; Storage &rarr; Clear storage</em>, or uninstall the app. Clips you downloaded can be deleted from within the app&rsquo;s album or through your file manager.</p>
 </section>
 
 <section class="card">
   <h2>8. Security</h2>
-  <p>The app stores settings and cached data in its private, sandboxed storage. Connection settings are kept in an encrypted DataStore. Communication with the dashcam uses the camera&rsquo;s local HTTP protocol over the private Wi-Fi link between your phone and the camera; it does not traverse the internet. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
+  <p>The app stores settings and cached data in its private, sandboxed storage. Connection settings are kept in an encrypted DataStore. Communication with the dashcam uses the camera&rsquo;s local HTTP protocol over the private Wi-Fi link between your phone and the camera; it does not traverse the internet. Feedback you submit is sent to the developer over an encrypted HTTPS/TLS connection. The app is distributed through the Google Play Store, which verifies the developer signing key on every update.</p>
 </section>
 
 <section class="card">
