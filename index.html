@@ -56,32 +56,41 @@
 
 <header>
   <h1>Privacy Policy</h1>
-  <p>Dash Cam Viewer &middot; last updated <time datetime="2026-07-15">July 15, 2026</time></p>
+  <p>Dash Cam Viewer &middot; last updated <time datetime="2026-09-23">September 23, 2026</time></p>
 </header>
 
 <section class="card">
   <h2>1. Summary</h2>
   <p>Dash Cam Viewer (&ldquo;the app&rdquo;) is a companion app that connects to a compatible Wi-Fi dashcam (Novatek-based car DVR) to show its live view, browse recordings, and download clips to your phone. It is published by <strong>Cool App Helpdesk</strong>.</p>
   <ul>
-    <li>There are <strong>no user accounts</strong>, no analytics, and no advertising or third-party tracking SDKs.</li>
+    <li>There are <strong>no user accounts</strong> and no analytics SDKs.</li>
+    <li>From version 1.0.27 the app shows <strong>ads supplied by Google AdMob</strong> to some users. Where ads are shown, Google receives your device&rsquo;s <strong>advertising ID</strong> &mdash; see section&nbsp;2a.</li>
     <li>Your camera activity stays local: live view, recordings, and downloads happen <strong>directly between your phone and your camera</strong> over its Wi-Fi network and are never sent to the developer or any third party.</li>
-    <li>The only information that ever leaves your device is what you <strong>voluntarily submit through the in-app feedback form</strong>, and only if you choose to use it &mdash; see section&nbsp;2.</li>
+    <li>Apart from advertising, the only information that leaves your device is what you <strong>voluntarily submit</strong> &mdash; the feedback form, the exit survey, or an unsupported-camera report &mdash; and only if you choose to send it. See section&nbsp;2.</li>
   </ul>
 </section>
 
 <section class="card">
   <h2>2. Data we collect</h2>
-  <p>Dash Cam Viewer does not automatically collect personal data, telemetry, advertising IDs, or usage analytics, and there are no user accounts. The one exception is the optional <strong>in-app feedback form</strong>.</p>
-  <p>If &mdash; and only if &mdash; you open <em>Send Feedback</em> and submit it, the app sends the following to the developer&rsquo;s feedback service so we can read and respond:</p>
+  <p>Dash Cam Viewer collects no personal data automatically, runs no usage analytics, and has no user accounts. Two things do leave the device: the advertising ID, where ads are shown (section&nbsp;2a), and whatever you deliberately send us through the app.</p>
+  <p>If &mdash; and only if &mdash; you submit the <em>Send Feedback</em> form, answer the short survey the app may show as you leave it, or send an unsupported-camera report, the app sends the following to the developer&rsquo;s service so we can read and respond:</p>
   <table>
     <thead><tr><th>Data</th><th>Provided</th><th>Purpose</th></tr></thead>
     <tbody>
-      <tr><td>Your message and its subject / type</td><td>Required to submit</td><td>To understand and respond to your feedback</td></tr>
+      <tr><td>Your message and its subject / type, or your survey answers, or the camera details and network trace shown to you in the report preview</td><td>Required to submit</td><td>To understand and respond, and to add support for cameras that do not work</td></tr>
       <tr><td>A contact detail (email or phone)</td><td><strong>Optional</strong> &mdash; only if you type one</td><td>So we can reply to you</td></tr>
       <tr><td>Basic technical context: app version, device model, Android version</td><td>Included with a submission</td><td>To reproduce and fix the issue you report</td></tr>
     </tbody>
   </table>
-  <p>This information is used <strong>solely to handle your feedback</strong>. It is never sold, shared for advertising, or used to build a profile, and it is transmitted over an encrypted (HTTPS) connection. If you never use the feedback form, none of this is sent.</p>
+  <p>This information is used <strong>solely to handle what you sent us</strong>. It is never sold, never shared with advertisers, and never used to build a profile, and it is transmitted over an encrypted (HTTPS) connection. If you never send anything, none of it leaves your device.</p>
+</section>
+
+<section class="card">
+  <h2>2a. Advertising</h2>
+  <p>From version 1.0.27 the app shows ads supplied by <strong>Google AdMob</strong>: one full-screen ad while the app starts, and a banner at the foot of the local album. There are no ads on the live view, while connecting to a camera, or on any error or report screen.</p>
+  <p><strong>Not every user sees them.</strong> Ads are shown to people who have never connected a camera and never streamed a live view. If you have connected a camera or watched a live view, the app shows you no ads at all until <strong>September 2027</strong>.</p>
+  <p>Where ads are shown, the Google Mobile Ads SDK collects your device&rsquo;s <strong>advertising ID</strong> and shares it with Google to select and measure ads and to detect fraud. The developer never receives it. You can reset or delete that ID at any time in Android&rsquo;s <em>Settings &rarr; Privacy &rarr; Ads</em>, and Google&rsquo;s handling of it is covered by the <a href="https://policies.google.com/privacy" rel="noopener" target="_blank">Google Privacy Policy</a> and the <a href="https://support.google.com/admob/answer/6128543" rel="noopener" target="_blank">Google Ads partner terms</a>.</p>
+  <p>In the European Economic Area, the United Kingdom and Switzerland the app asks for your consent before personalised ads are shown, using Google&rsquo;s certified consent form. You can decline, and you may change your answer later from that same form. No recording, camera detail or anything else described in section&nbsp;2 is ever sent to an advertiser.</p>
 </section>
 
 <section class="card">
@@ -118,13 +127,13 @@
     <li><strong>Live view</strong> — an MJPEG or RTSP video stream served by the camera on the local network.</li>
     <li><strong>Recordings</strong> — the recording list, thumbnails, and file downloads are fetched directly from the camera.</li>
   </ul>
-  <p>These camera connections use the camera&rsquo;s own HTTP protocol on your local network and never leave it. The <strong>only</strong> connection the app makes to the internet is to the developer&rsquo;s feedback service, over encrypted HTTPS, and <strong>only</strong> when you submit the optional feedback form (see section&nbsp;2). The app contains <strong>no advertising, analytics, crash-reporting, social, or attribution SDKs</strong>. Bundled libraries (Media3 ExoPlayer, OkHttp, Coil, Room, DataStore) operate strictly within the scope described here.</p>
+  <p>These camera connections use the camera&rsquo;s own HTTP protocol on your local network and never leave it. The app makes exactly two kinds of internet connection: to the developer&rsquo;s service, over encrypted HTTPS, when you send feedback, a survey answer or a camera report (section&nbsp;2); and to <strong>Google AdMob</strong>, for the users and screens described in section&nbsp;2a. The app contains <strong>no analytics, crash-reporting, social or attribution SDKs</strong>. Bundled libraries (Media3 ExoPlayer, OkHttp, Coil, Room, DataStore, NanoHTTPD, ZXing) operate strictly within the scope described here.</p>
 </section>
 
 <section class="card">
   <h2>6. Children&rsquo;s privacy</h2>
   <p>Dash Cam Viewer is a general-purpose utility for dashcam owners. It is not directed at children under 13, but we recognize that minors may use it. The developer collects no personal information from any user, regardless of age.</p>
-  <p>The app contains no advertisements, no behavioral tracking, and no in-app purchases.</p>
+  <p>The app has no in-app purchases and does no behavioural profiling of its own. It does show ads to some users (section&nbsp;2a); because the app is not directed at children, those ads are served under Google&rsquo;s ordinary AdMob terms rather than its child-directed treatment.</p>
 </section>
 
 <section class="card">
